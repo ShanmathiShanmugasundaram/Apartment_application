@@ -1,121 +1,71 @@
-Apartment Visitor Entry Management System (Java Console App)
-#Project Overview
+# Apartment Visitor Entry Management System
 
-The Apartment Visitor Entry Management System is a Java-based console application designed to manage visitor entry, approval, parking allocation, and security monitoring in an apartment community.
+A **Java console-based application** designed to manage visitor entry, approval, parking allocation, and security monitoring in an apartment community.  
+The system follows **role-based access control** for Admin, Resident, and Security users.
 
-This system supports multiple user roles:
+---
 
-Admin
+## Features
 
-Resident
+### User Authentication
+- User Registration and Login
+- Role-based access:
+  - Admin
+  - Resident
+  - Security
 
-Security
+---
 
-Each role has specific responsibilities to ensure secure and organized visitor management.
+### Resident Module
+- Pre-register visitors
+- Approve or deny visitor requests
+- View visitor logs related to their apartment
 
-#Features
-#User Authentication
+---
 
-User Registration & Login
+### Security Module
+- Visitor check-in (only approved visitors)
+- Visitor check-out
+- Automatic parking slot allocation
+- Parking slot release on checkout
+- View all visitor activity logs
 
-Role-based access control:
+---
 
-Admin
+### Admin Module
+- View all visitors
+- Monitor parking slot availability
+- Generate security audit reports
 
-Resident
+---
 
-Security
+### Parking Management
+- Limited parking slots (`P1` to `P5`)
+- Automatic slot assignment
+- Real-time parking status
+- Slot release after visitor checkout
 
- #Resident Features
+---
 
-Pre-register visitors
+## Technologies Used
+- Java
+- Java Collections Framework
+  - ArrayList
+  - HashSet
+  - HashMap
+- Scanner (for console input)
 
-Approve or deny visitor requests
-
-View visitor logs related to their apartment
-
-#Security Features
-
-Visitor check-in (only approved visitors)
-
-Visitor check-out
-
-Automatic parking slot assignment & release
-
-View all visitor activity logs
-
- #Admin Features
-
-View all visitors and logs
-
-Monitor parking slot status
-
-Generate security audit reports
-
-#Parking Management
-
-Limited parking slots (P1 to P5)
-
-Automatic allocation during check-in
-
-Slot release during check-out
-
-Real-time parking availability tracking
-
-#Technologies Used
-
-Java
-
-Java Collections Framework
-
-ArrayList
-
-HashSet
-
-HashMap
-
-Scanner for user input
-
-Console-based UI
-
-#Project Structure
-ApartmentVisitorApp.java
+---
 
 
-Main components:
+## How to Run the Project
 
-User class – handles user data and roles
+### Prerequisites
+- Java JDK 8 or higher
+- Command Prompt / Terminal or any Java IDE
 
-Visitor class – manages visitor details
-
-Role-specific menus:
-
-Resident Menu
-
-Security Menu
-
-Admin Menu
-
-#How to Run the Application
-#Prerequisites
-
-Java JDK (Version 8 or above)
-
-Any Java-supported IDE (IntelliJ, Eclipse, VS Code)
-OR Command Prompt / Terminal
-
-#Steps to Run
-
-Save the file as:
-
-ApartmentVisitorApp.java
-
-
-Compile the program:
-
+### Steps to Execute
+```bash
 javac ApartmentVisitorApp.java
-
-
-Run the application:
-
 java ApartmentVisitorApp
+
